@@ -53,7 +53,7 @@ MonoBehaviour:
   _laughUI: {fileID: 5944673237296897003}
   _laughterDecay: 5
   _laughterDecayDelay: 5
-  _laughterRequirement: 100
+  _laughterRequirement: 200
 --- !u!1 &109638896923606584
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ Transform:
   m_GameObject: {fileID: 109638896923606584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000009536743, y: 2.7499995, z: -10}
+  m_LocalPosition: {x: -0.098976135, y: 5.033244, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,7 +123,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75, y: 0}
   m_AnchorMax: {x: 1, y: 0.4}
-  m_AnchoredPosition: {x: 2.4049377, y: -4.049975}
+  m_AnchoredPosition: {x: 2.4049377, y: -4.0499573}
   m_SizeDelta: {x: 4.8101315, y: 8.10005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5944673237296897003
@@ -623,7 +623,7 @@ Transform:
   m_GameObject: {fileID: 8348573410184388514}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000009536743, y: 2.7499995, z: -10}
+  m_LocalPosition: {x: 0, y: 2.8499994, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
