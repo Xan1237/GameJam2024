@@ -11,7 +11,7 @@ public class completeFour : MonoBehaviour
     {
             if(PlayerPrefs.GetInt("levelFour") == 1){
              _buttonFour = GetComponent<Image>();
-            _buttonFour.color = Color.cyan;
+            _buttonFour.color = Color.green;
         }
     }
 

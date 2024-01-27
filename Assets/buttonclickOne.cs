@@ -14,7 +14,7 @@ public class buttonclickOne : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("levelOne") == 1){
              _buttonOne = GetComponent<Image>();
-            _buttonOne.color = Color.cyan;
+            _buttonOne.color = Color.green;
         }
     }
 

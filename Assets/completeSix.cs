@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class completedThree : MonoBehaviour
+public class completedSix : MonoBehaviour
 {
-    private Image _buttonThree;
+    private Image _buttonSix;
     // Start is called before the first frame update
     void Start()
     {
-            if(PlayerPrefs.GetInt("levelThree") == 1){
-             _buttonThree = GetComponent<Image>();
-            _buttonThree.color = Color.green;
+            if(PlayerPrefs.GetInt("levelSix") == 1){
+             _buttonSix = GetComponent<Image>();
+            _buttonSix.color = Color.green;
         }
     }
 

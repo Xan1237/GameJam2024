@@ -11,7 +11,7 @@ public class completed : MonoBehaviour
     {
             if(PlayerPrefs.GetInt("levelTwo") == 1){
              _buttonTwo = GetComponent<Image>();
-            _buttonTwo.color = Color.cyan;
+            _buttonTwo.color = Color.green;
         }
     }
 
