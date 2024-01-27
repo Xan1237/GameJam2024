@@ -20,6 +20,7 @@ public class Teeth : MonoBehaviour
     {
         if (Vector2.Distance(_teethTransform.position, _positions[_index].position) > 0.01f)
         {
+            _teethTransform.right = _positions[_index].position - _teethTransform.position;
             _teethTransform.position = Vector2.MoveTowards(_teethTransform.position, _positions[_index].position, Time.deltaTime * _speed);
         }
         else
