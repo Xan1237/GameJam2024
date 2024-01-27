@@ -306,11 +306,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 965572140470548647, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
   m_PrefabInstance: {fileID: 8360713075695104822}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &363459586 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1910798054440112855, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
-  m_PrefabInstance: {fileID: 1680911064541967197}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &661125465
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,14 +970,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.9000006
       objectReference: {fileID: 0}
-    - target: {fileID: 2484148924248189448, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2.4049072
-      objectReference: {fileID: 0}
-    - target: {fileID: 2484148924248189448, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -4.049988
-      objectReference: {fileID: 0}
     - target: {fileID: 2810789643310839599, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1035,10 +1022,6 @@ PrefabInstance:
       propertyPath: _laughterRequirement
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 5944223905461301215, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
-      propertyPath: _pickup
-      value: 
-      objectReference: {fileID: 363459586}
     - target: {fileID: 6570025351975291157, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09
@@ -1442,9 +1425,9 @@ SceneRoots:
   - {fileID: 1286365683}
   - {fileID: 1102747910}
   - {fileID: 5006565854243057152}
-  - {fileID: 1680911064541967197}
   - {fileID: 1875959341}
   - {fileID: 5088476768096781476}
   - {fileID: 8360713075695104822}
   - {fileID: 8990767287718584100}
   - {fileID: 7587996592666021548}
+  - {fileID: 1680911064541967197}

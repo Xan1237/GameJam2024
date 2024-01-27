@@ -6,9 +6,11 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class WoopieCushion : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem _particles;
     [SerializeField] private float _velocityMultiplier = 1.7f;
     [SerializeField] private float _velocityConstant = 15f;
     [SerializeField] private float _inflateTime = 5f;
+    [SerializeField] private float _maxLaughter = 80f;
 
     private Animator _animator;
     private bool _inflated = true;
@@ -48,8 +50,8 @@ public class WoopieCushion : MonoBehaviour
                     _timer = _inflateTime;
                     newVelocity.y = _velocityConstant + (newVelocity.y * -_velocityMultiplier);
                     controller.SetVelocity(newVelocity, PlayerForce.Burst);
-                    GameManager.Instance.AddLaughter(newVelocity.y);
-                    // TODO: Fix jumping affecting height
+                    GameManager.Instance.AddLaughter(Mathf.Clamp(newVelocity.y, 0f, _maxLaughter));
+                    _particles.Play();
                 }
             }
         }
