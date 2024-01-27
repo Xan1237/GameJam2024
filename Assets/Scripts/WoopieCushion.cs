@@ -49,6 +49,7 @@ public class WoopieCushion : MonoBehaviour
                     newVelocity.y = _velocityConstant + (newVelocity.y * -_velocityMultiplier);
                     player.SetVelocity(newVelocity, PlayerForce.Burst);
                     GameManager.Instance.AddLaughter(newVelocity.y);
+                    // TODO: Fix jumping affecting height
                 }
             }
         }
