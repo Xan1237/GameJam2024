@@ -39,19 +39,32 @@ public class WoopieCushion : MonoBehaviour
     {
         if (_inflated)
         {
-            if (collision.TryGetComponent(out PlayerController player))
+            if (collision.TryGetComponent(out PlayerController controller))
             {
-                Vector2 newVelocity = player.Velocity;
+                Vector2 newVelocity = controller.Velocity;
                 if (newVelocity.y < 0f)
                 {
                     _inflated = false;
                     _timer = _inflateTime;
                     newVelocity.y = _velocityConstant + (newVelocity.y * -_velocityMultiplier);
-                    player.SetVelocity(newVelocity, PlayerForce.Burst);
+                    controller.SetVelocity(newVelocity, PlayerForce.Burst);
                     GameManager.Instance.AddLaughter(newVelocity.y);
                     // TODO: Fix jumping affecting height
                 }
             }
+        }
+
+        if (collision.TryGetComponent(out Player player))
+        {
+            player.SetCushion(this);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out Player player))
+        {
+            player.RemoveCushion(this);
         }
     }
 }

@@ -13,9 +13,11 @@ public class GameManager : Singleton<GameManager>
     private float _laughAmount = 0f;
     private float _lastLaugh = 0f;
 
+    private bool _levelWon = false;
+
     private void Update()
     {
-        if (Time.time - _lastLaugh >  _laughterDecayDelay)
+        if (!_levelWon && Time.time - _lastLaugh >  _laughterDecayDelay)
             _laughAmount -= Time.deltaTime * _laughterDecay;
 
         if (_laughAmount < 0f)
@@ -35,12 +37,20 @@ public class GameManager : Singleton<GameManager>
         if (_laughAmount >= _laughterRequirement)
         {
             _laughAmount = _laughterRequirement;
-            Debug.Log("Win condition");
+            _levelWon = true;
+            StartCoroutine(NextLevel());
         }
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(3f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
