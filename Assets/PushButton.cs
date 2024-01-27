@@ -1,10 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
+[RequireComponent(typeof(Animator))]
 public class PushButton : MonoBehaviour
 {
+    public UnityEvent ButtonPressed;
+    public UnityEvent ButtonDepressed;
+
+    private Animator _animator;
+
     private bool _isPressed;
+    private bool _lastState = false;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -13,9 +26,20 @@ public class PushButton : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_isPressed)
+        if (_lastState != _isPressed)
         {
-            Debug.Log("Was pressed");
+            _lastState = _isPressed;
+
+            if (_isPressed)
+            {
+                ButtonPressed?.Invoke();
+                _animator.SetBool("IsPressed", true);
+            }
+            else
+            {
+                ButtonDepressed?.Invoke();
+                _animator.SetBool("IsPressed", false);
+            }
         }
 
         _isPressed = false;
