@@ -48,9 +48,8 @@ public class WoopieCushion : MonoBehaviour
                     _timer = _inflateTime;
                     newVelocity.y = _velocityConstant + (newVelocity.y * -_velocityMultiplier);
                     player.SetVelocity(newVelocity, PlayerForce.Burst);
+                    GameManager.Instance.AddLaughter(newVelocity.y);
                 }
-
-                Debug.Log("Woopie Cushion Hit! " + newVelocity);
             }
         }
     }
