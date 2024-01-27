@@ -20,7 +20,7 @@ public class Background : MonoBehaviour
             {
                 GameObject row = Instantiate(_rowPrefab, transform);
 
-                float x = (i * 25f) + (j % 2 == 0 ? 0 : 0.8f) - 20f;
+                float x = (i * 35f) + (j % 2 == 0 ? 0 : 0.8f) - 25f;
                 float y = 10f + j * -1.25f;
 
                 row.transform.localPosition = new Vector2(x, y);
