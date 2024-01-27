@@ -2561,7 +2561,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Utilize your surroundings, fill the laugh-o-meter, and have fun!
+
+
+    Navigate
+    this 2d puzzle platformer by utilizing your surroundings to make the audience
+    laugh. They will determine whether or not your performance is great enough to
+    move onto the next level.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dce036e66567ae44790b9f5011eb5fe8, type: 2}
   m_sharedMaterial: {fileID: 8150754957957753670, guid: dce036e66567ae44790b9f5011eb5fe8, type: 2}
