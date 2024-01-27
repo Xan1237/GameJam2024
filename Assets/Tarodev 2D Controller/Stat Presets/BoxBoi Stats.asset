@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 8
   ClimbableLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
   LadderLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 64
   SnapInput: 1
   VerticalDeadzoneThreshold: 0.3
   HorizontalDeadzoneThreshold: 0.1
@@ -31,18 +31,18 @@ MonoBehaviour:
   GroundingForce: -1.5
   StickyFeetMultiplier: 2
   GrounderDistance: 0.05
-  AllowCrouching: 1
+  AllowCrouching: 0
   CrouchSpeedPenalty: 0.5
   CrouchSlowdownFrames: 50
   CrouchBufferCheck: 0.01
-  MaxAirJumps: 1
+  MaxAirJumps: 0
   JumpPower: 36
   MaxFallSpeed: 40
   FallAcceleration: 110
   JumpEndEarlyGravityModifier: 3
   CoyoteFrames: 7
   JumpBufferFrames: 7
-  AllowWalls: 1
+  AllowWalls: 0
   RequireInputPush: 0
   WallClimbSpeed: 5
   WallFallAcceleration: 8
@@ -51,7 +51,7 @@ MonoBehaviour:
   WallJumpInputLossFrames: 18
   WallJumpCoyoteFrames: 5
   WallDetectorSize: {x: 1, y: 1.25}
-  AllowLadders: 1
+  AllowLadders: 0
   AutoAttachToLadders: 0
   SnapToLadders: 1
   LadderSnapTime: 0.05
@@ -66,9 +66,10 @@ MonoBehaviour:
   StandUpOffset: {x: 0.25, y: 0.02}
   LedgeRaycastSpacing: 0.3
   LedgeClimbDuration: 0.5
-  AllowDash: 1
+  AllowDash: 0
   DashVelocity: 50
   DashDurationFrames: 5
+  DashCooldown: 1.5
   DashEndHorizontalMultiplier: 0.25
   AllowAttacks: 0
   AttackFrameCooldown: 15
