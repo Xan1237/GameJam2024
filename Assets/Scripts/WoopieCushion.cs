@@ -7,14 +7,32 @@ using UnityEngine;
 public class WoopieCushion : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _particles;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Color _normalColor;
+    [SerializeField] private Color _staticColor;
     [SerializeField] private float _velocityMultiplier = 1.7f;
     [SerializeField] private float _velocityConstant = 15f;
     [SerializeField] private float _inflateTime = 5f;
     [SerializeField] private float _maxLaughter = 80f;
+    [SerializeField] private bool _isStatic = false;
 
     private Animator _animator;
     private bool _inflated = true;
     private float _timer = 0f;
+
+    private void OnValidate()
+    {
+        if (_isStatic)
+        {
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            _spriteRenderer.color = _staticColor;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            _spriteRenderer.color = _normalColor;
+        }
+    }
 
     private void Start()
     {
@@ -56,7 +74,7 @@ public class WoopieCushion : MonoBehaviour
             }
         }
 
-        if (collision.TryGetComponent(out Player player))
+        if (collision.TryGetComponent(out Player player) && !_isStatic)
         {
             player.SetCushion(this);
         }
@@ -64,7 +82,7 @@ public class WoopieCushion : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Player player))
+        if (collision.TryGetComponent(out Player player) && !_isStatic)
         {
             player.RemoveCushion(this);
         }

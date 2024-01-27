@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1633530493, guid: ef1d0db740d604b8791111ce233c6c35, type: 3}
-  m_Color: {r: 0.9528302, g: 0.4269758, b: 0.8994655, a: 1}
+  m_Color: {r: 0.9529412, g: 0.42745098, b: 0.8980392, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -180,10 +180,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 6523476880930813589}
+  _spriteRenderer: {fileID: 1111700019000980700}
+  _normalColor: {r: 0.9529412, g: 0.42745098, b: 0.8980392, a: 1}
+  _staticColor: {r: 1, g: 0.5065182, b: 0.023584902, a: 1}
   _velocityMultiplier: 1.6
   _velocityConstant: 10
   _inflateTime: 3
   _maxLaughter: 80
+  _isStatic: 0
 --- !u!95 &5919117689379830907
 Animator:
   serializedVersion: 5
