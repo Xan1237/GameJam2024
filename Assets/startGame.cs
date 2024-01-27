@@ -7,7 +7,7 @@ public class StartButton : MonoBehaviour
 
     public void PlayGame(){
         SceneManager.LoadSceneAsync(2);
-        Debug.Log("test");
+
     }
 
 
