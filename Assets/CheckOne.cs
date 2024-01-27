@@ -26,6 +26,24 @@ public class CheckOne : MonoBehaviour
           if(PlayerPrefs.GetInt("LevelOne") == 1){
             check.enabled = true;
           }
+           if(PlayerPrefs.GetInt("LevelTwo") == 1){
+            checkTwo.enabled = true;
+          }
+           if(PlayerPrefs.GetInt("LevelThree") == 1){
+            checkThree.enabled = true;
+          }
+            if(PlayerPrefs.GetInt("LevelThree") == 1){
+                checkThree.enabled = true;
+            }
+            if(PlayerPrefs.GetInt("LevelFour") == 1){
+                checkFour.enabled = true;
+          }
+          if(PlayerPrefs.GetInt("LevelFive") == 1){
+            checkFive.enabled = true;
+          }
+          if(PlayerPrefs.GetInt("LevelSix") == 1){
+            checkSix.enabled = true;
+            }
     }
 
     // Update is called once per frame
