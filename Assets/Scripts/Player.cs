@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static TreeEditor.TreeEditorHelper;
 
 public class Player : MonoBehaviour
 {
@@ -23,11 +24,13 @@ public class Player : MonoBehaviour
                 if (_cushion != null)
                 {
                     _cushion.transform.parent = _pickup;
+                    _cushion.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                     _cushion.transform.localPosition = Vector2.zero;
                 }
             }
             else
             {
+                _pickup.GetChild(0).GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 _pickup.GetChild(0).parent = null;
             }
         }
