@@ -171,17 +171,6 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
---- !u!114 &145152156 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7459804052147480042, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
-  m_PrefabInstance: {fileID: 1680911064541967197}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478a60ed1f40643adaba658ab4e3cbf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &239278544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,10 +1027,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SeatRows
       objectReference: {fileID: 0}
-    - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
-      propertyPath: _background
-      value: 
-      objectReference: {fileID: 145152156}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterDecay
       value: 5

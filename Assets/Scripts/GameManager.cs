@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TarodevController;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private LaughMeterUI _laughUI;
     [SerializeField] private Background _background;
+    [SerializeField] private PlayerController _player;
     [SerializeField] private float _laughterDecay = 5f;
     [SerializeField] private float _laughterRequirement = 100f;
 
@@ -41,7 +43,8 @@ public class GameManager : Singleton<GameManager>
         {
             _laughAmount = _laughterRequirement;
             _levelWon = true;
-            StartCoroutine(NextLevel());
+            _player.TakeAwayControl();
+            StartCoroutine(NextLevelCoroutine());
         }
     }
 
@@ -50,7 +53,20 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public IEnumerator NextLevel()
+    public void LoseLevel()
+    {
+        _player.gameObject.SetActive(false);
+        StartCoroutine(LoseLevelCoroutine());
+    }
+
+    private IEnumerator LoseLevelCoroutine()
+    {
+        yield return new WaitForSeconds(3f);
+
+        RestartLevel();
+    }
+
+    private IEnumerator NextLevelCoroutine()
     {
         yield return new WaitForSeconds(3f);
 
