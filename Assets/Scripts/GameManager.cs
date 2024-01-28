@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TarodevController;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private LaughMeterUI _laughUI;
     [SerializeField] private Background _background;
+    [SerializeField] private PlayerController _player;
     [SerializeField] private float _laughterDecay = 5f;
     [SerializeField] private float _laughterRequirement = 100f;
 
@@ -41,6 +43,7 @@ public class GameManager : Singleton<GameManager>
         {
             _laughAmount = _laughterRequirement;
             _levelWon = true;
+            _player.TakeAwayControl();
             StartCoroutine(NextLevel());
         }
     }
