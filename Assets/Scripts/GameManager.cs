@@ -6,12 +6,18 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private LaughMeterUI _laughUI;
+    [SerializeField] private Background _background;
     [SerializeField] private float _laughterDecay = 5f;
     [SerializeField] private float _laughterRequirement = 100f;
 
     private float _laughAmount = 0f;
 
     private bool _levelWon = false;
+
+    private void Start()
+    {
+        _background.GenerateBackground();
+    }
 
     private void Update()
     {
@@ -24,6 +30,7 @@ public class GameManager : Singleton<GameManager>
         }
 
         _laughUI.SetLaughAmount(_laughAmount / _laughterRequirement);
+        _background.SetExcitementLevel(_laughAmount / _laughterRequirement);
     }
 
     public void AddLaughter(float amount)
