@@ -1284,6 +1284,7 @@ GameObject:
   - component: {fileID: 782270929}
   - component: {fileID: 782270928}
   - component: {fileID: 782270927}
+  - component: {fileID: 782270930}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1354,7 +1355,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 782270928}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 782270930}
+        m_TargetAssemblyTypeName: creditsmove, Assembly-CSharp
+        m_MethodName: whenclicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &782270928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1393,6 +1406,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782270925}
   m_CullTransparentMesh: 1
+--- !u!114 &782270930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782270925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd21953359eb9d4fa938cbd26311465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &869747916
 GameObject:
   m_ObjectHideFlags: 0
