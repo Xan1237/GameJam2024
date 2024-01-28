@@ -12,12 +12,16 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private float _laughterDecay = 5f;
     [SerializeField] private float _laughterRequirement = 100f;
 
+    private AudioSource _audioSource;
+
     private float _laughAmount = 0f;
 
     private bool _levelWon = false;
 
     private void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
+
         float people = (float)SceneManager.GetActiveScene().buildIndex / (SceneManager.sceneCountInBuildSettings - 1) * Random.Range(0.8f, 1f);
         _background.GenerateBackground(people);
     }
@@ -32,8 +36,11 @@ public class GameManager : Singleton<GameManager>
             _laughAmount = 0f;
         }
 
-        _laughUI.SetLaughAmount(_laughAmount / _laughterRequirement);
-        _background.SetExcitementLevel(_laughAmount / _laughterRequirement);
+        float laughPercent = _laughAmount / _laughterRequirement;
+
+        _laughUI.SetLaughAmount(laughPercent);
+        _background.SetExcitementLevel(laughPercent);
+        _audioSource.volume = laughPercent;
     }
 
     public void AddLaughter(float amount)
