@@ -55,25 +55,25 @@ public class GameManager : Singleton<GameManager>
         {
             //playerprefs
             int scene = SceneManager.GetActiveScene().buildIndex;
-            if(scene == 2){
+            if(scene == 1){
                 PlayerPrefs.SetInt("levelOne", 1);
             }
-             if(scene == 3){
+             if(scene == 2){
                 PlayerPrefs.SetInt("levelTwo", 1);
             }
-            if(scene == 4){
+            if(scene == 3){
                 PlayerPrefs.SetInt("levelThree", 1);
             }
-             if(scene == 5){
+             if(scene == 4){
                 PlayerPrefs.SetInt("levelFour", 1);
             }
-             if(scene == 6){
+             if(scene == 5){
                 PlayerPrefs.SetInt("levelFive", 1);
             }
-             if(scene == 7){
+             if(scene == 6){
                 PlayerPrefs.SetInt("levelSix", 1);
             }
-             if(scene == 8){
+             if(scene == 7){
                 PlayerPrefs.SetInt("levelSeven", 1);
             }
 
