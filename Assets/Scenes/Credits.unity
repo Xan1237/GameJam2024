@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 503.9928, y: 1120}
+  m_AnchoredPosition: {x: 154, y: 1804}
   m_SizeDelta: {x: 810.8739, y: 290.7733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555540760
@@ -194,22 +194,47 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Head Programmer: Wiley Swikit
+  m_text: 'Press Escape To Exit
 
-    Level Design: Jack Hayes and Alex Hayes
 
-    Asset
-    Creation: Saul Hafting and Nate Briand
 
-    User Interface Xander Brown
 
-    Music
-    Provided By: Jacob Waldner
 
-    Souds Provided By: PixaBay
 
-    Fonts Provided
-    By: Google Fonts'
+
+
+
+
+
+
+    Version 1.0.0
+
+    Published: January
+    28th 2024
+
+    Game Created For Game Jam @ DALHOUSIE
+
+    Souds Provided By:
+    PixaBay
+
+    Fonts Provided By: Google Fonts
+
+    Music Provided By: Jacob Waldner
+
+    Assets
+    Created By: Saul Hafting and Nate Briand
+
+    User Interface: Xander Brown
+
+    Level
+    Design: Jack Hayes and Alex Hayes
+
+    Head Programmer: Wiley Swikit
+
+
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ee7af6dd1c161e64ea16cad1d1e4e956, type: 2}
   m_sharedMaterial: {fileID: -9005601686082112650, guid: ee7af6dd1c161e64ea16cad1d1e4e956, type: 2}
@@ -243,7 +268,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -272,7 +297,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -262.02628, y: 0, z: 0, w: -220.99481}
+  m_margin: {x: -202.31503, y: 0, z: 110.46576, w: -220.99481}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

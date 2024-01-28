@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 
 
@@ -24,6 +26,12 @@ public class Credits : MonoBehaviour
     {
         Vector3 pos = text2.transform.position;
         pos.y -= 0.3f;
+        if(!(transform.position.y < 300)){
         text2.transform.position = pos;
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            SceneManager.LoadScene(1);
     }
+}
 }

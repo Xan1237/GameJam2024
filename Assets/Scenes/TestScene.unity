@@ -1027,6 +1027,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3091083429053759447, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3770567298409289527, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: m_Name
       value: SeatRows
@@ -1058,6 +1062,14 @@ PrefabInstance:
     - target: {fileID: 7288925409482031282, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: m_LocalPosition.y
       value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7455400586779660850, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7455400587017043091, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6948654437678918003, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
