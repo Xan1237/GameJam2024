@@ -19,6 +19,10 @@ public class WoopieCushion : MonoBehaviour
     private Animator _animator;
     private bool _inflated = true;
     private float _timer = 0f;
+    public AudioSource audio1;
+    public AudioSource audio2;
+    public AudioSource audio3;
+    private int audioChoice;
 
     private void OnValidate()
     {
@@ -70,6 +74,16 @@ public class WoopieCushion : MonoBehaviour
                     controller.SetVelocity(newVelocity, PlayerForce.Burst);
                     GameManager.Instance.AddLaughter(Mathf.Clamp(newVelocity.y, 0f, _maxLaughter));
                     _particles.Play();
+                    audioChoice = Random.Range(1,3);
+                    if(audioChoice == 1){
+                        audio1.Play();
+                    }
+                    if(audioChoice == 2){
+                        audio2.Play();
+                    }
+                    else{
+                        audio3.Play();
+                    }
                 }
             }
         }
