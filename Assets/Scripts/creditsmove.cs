@@ -18,7 +18,7 @@ public class creditsmove : MonoBehaviour
 
 
     public static void whenclicked(){
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(9);
     }
 
 }
