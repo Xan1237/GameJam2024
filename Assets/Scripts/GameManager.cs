@@ -40,19 +40,20 @@ public class GameManager : Singleton<GameManager>
 
         _laughUI.SetLaughAmount(laughPercent);
         _background.SetExcitementLevel(laughPercent);
-        _audioSource.volume = laughPercent;
+        _audioSource.volume = laughPercent + 0.05f;
     }
 
-    public void AddLaughter(float amount)
+    public void AddLaughter(float amount, bool canWin)
     {
         _laughAmount += amount;
 
-        if (_laughAmount >= _laughterRequirement)
+        if (_laughAmount >= _laughterRequirement && canWin)
         {
             _laughAmount = _laughterRequirement;
             _levelWon = true;
             _player.TakeAwayControl();
-            StartCoroutine(NextLevelCoroutine());
+            if (SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings - 1)
+                StartCoroutine(NextLevelCoroutine());
         }
     }
 

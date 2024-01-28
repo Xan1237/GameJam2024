@@ -72,7 +72,7 @@ public class WoopieCushion : MonoBehaviour
                     _timer = _inflateTime;
                     newVelocity.y = _velocityConstant + (newVelocity.y * -_velocityMultiplier);
                     controller.SetVelocity(newVelocity, PlayerForce.Burst);
-                    GameManager.Instance.AddLaughter(Mathf.Clamp(newVelocity.y, 0f, _maxLaughter));
+                    GameManager.Instance.AddLaughter(Mathf.Clamp(newVelocity.y, 0f, _maxLaughter), false);
                     _particles.Play();
                     audioChoice = Random.Range(1,3);
                     if(audioChoice == 1){
