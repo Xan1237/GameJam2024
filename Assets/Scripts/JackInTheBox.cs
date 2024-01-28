@@ -6,8 +6,10 @@ using UnityEngine;
 public class JackInTheBox : MonoBehaviour
 {
     [SerializeField] private float _popInterval = 3f;
+    [SerializeField] private AudioClip[] _popSounds;
 
     private Animator _animator;
+    private AudioSource _audioSource;
 
     private float _timer = 0f;
     private bool _popped = false;
@@ -15,6 +17,7 @@ public class JackInTheBox : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
 
         _timer = _popInterval;
     }
@@ -27,6 +30,11 @@ public class JackInTheBox : MonoBehaviour
         {
             _timer = _popInterval;
             _popped = !_popped;
+
+            if (_popped)
+            {
+                _audioSource.PlayOneShot(_popSounds[Random.Range(0, _popSounds.Length)]);
+            }
         }
 
         _animator.SetBool("IsPopped", _popped);
