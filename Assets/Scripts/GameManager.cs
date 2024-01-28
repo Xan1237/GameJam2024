@@ -44,7 +44,7 @@ public class GameManager : Singleton<GameManager>
             _laughAmount = _laughterRequirement;
             _levelWon = true;
             _player.TakeAwayControl();
-            StartCoroutine(NextLevel());
+            StartCoroutine(NextLevelCoroutine());
         }
     }
 
@@ -53,7 +53,20 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public IEnumerator NextLevel()
+    public void LoseLevel()
+    {
+        _player.gameObject.SetActive(false);
+        StartCoroutine(LoseLevelCoroutine());
+    }
+
+    private IEnumerator LoseLevelCoroutine()
+    {
+        yield return new WaitForSeconds(3f);
+
+        RestartLevel();
+    }
+
+    private IEnumerator NextLevelCoroutine()
     {
         yield return new WaitForSeconds(3f);
 
