@@ -10,4 +10,9 @@ public class MainMenuBackground : MonoBehaviour
     {
         _background.GenerateBackground(0.4f);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
