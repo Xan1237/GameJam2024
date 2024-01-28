@@ -6336,11 +6336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2975438089914867746, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.38
+      value: 2.47
       objectReference: {fileID: 0}
     - target: {fileID: 2975438089914867746, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.54
+      value: 6.22
       objectReference: {fileID: 0}
     - target: {fileID: 3748691291474321493, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: m_Name
@@ -6348,11 +6348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7948188894111057323, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.82
+      value: -13.18
       objectReference: {fileID: 0}
     - target: {fileID: 7948188894111057323, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.78
+      value: 5.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6728,7 +6728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterDecay
-      value: 300
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterDecayDelay
@@ -6736,7 +6736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterRequirement
-      value: 1500
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 5944223905461301215, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _deathY
