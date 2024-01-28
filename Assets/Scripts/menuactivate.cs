@@ -42,7 +42,7 @@ public class menuactivate : MonoBehaviour
 
 
     public  void button1Active(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
 
