@@ -7,17 +7,15 @@ public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private LaughMeterUI _laughUI;
     [SerializeField] private float _laughterDecay = 5f;
-    [SerializeField] private float _laughterDecayDelay = 5f;
     [SerializeField] private float _laughterRequirement = 100f;
 
     private float _laughAmount = 0f;
-    private float _lastLaugh = 0f;
 
     private bool _levelWon = false;
 
     private void Update()
     {
-        if (!_levelWon && Time.time - _lastLaugh >  _laughterDecayDelay)
+        if (!_levelWon)
             _laughAmount -= Time.deltaTime * _laughterDecay;
 
         if (_laughAmount < 0f)
@@ -31,8 +29,6 @@ public class GameManager : Singleton<GameManager>
     public void AddLaughter(float amount)
     {
         _laughAmount += amount;
-
-        _lastLaugh = Time.time;
 
         if (_laughAmount >= _laughterRequirement)
         {
