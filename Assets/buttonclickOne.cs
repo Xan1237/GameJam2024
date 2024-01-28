@@ -16,6 +16,7 @@ public class buttonclickOne : MonoBehaviour
              _buttonOne = GetComponent<Image>();
             _buttonOne.color = Color.green;
         }
+        
     }
 
     // Update is called once per frame
