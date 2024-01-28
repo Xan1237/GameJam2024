@@ -8,6 +8,6 @@ public class MainMenuBackground : MonoBehaviour
 
     private void Start()
     {
-        _background.GenerateBackground();
+        _background.GenerateBackground(0.4f);
     }
 }

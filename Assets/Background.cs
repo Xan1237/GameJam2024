@@ -9,7 +9,7 @@ public class Background : MonoBehaviour
 
     private List<SeatRow> _rows = new();
 
-    public void GenerateBackground()
+    public void GenerateBackground(float personAmount)
     {
         for (int i = 0; i < 2; i++)
         {
@@ -24,7 +24,7 @@ public class Background : MonoBehaviour
                 SpriteRenderer sr = row.GetComponent<SpriteRenderer>();
                 sr.color = Color.Lerp(Color.black, Color.white, (float)j / _rowCount);
                 sr.sortingOrder = -501 + j;
-                row.GetComponent<SeatRow>().MakePeople(j, _rowCount, 0.5f);
+                row.GetComponent<SeatRow>().MakePeople(j, _rowCount, personAmount);
                 _rows.Add(row.GetComponent<SeatRow>());
             }
         }
