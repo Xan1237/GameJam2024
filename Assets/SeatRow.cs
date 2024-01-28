@@ -31,7 +31,7 @@ public class SeatRow : MonoBehaviour
                 Vector2 position = new Vector2(_firstSeat.position.x + 0.9f * i, _firstSeat.position.y);
                 GameObject person = Instantiate(_peoplePrefabs[Random.Range(0, _peoplePrefabs.Length)], position, Quaternion.identity, transform);
                 SpriteRenderer sr = person.GetComponent<SpriteRenderer>();
-                sr.sortingOrder = -501 + row;
+                sr.sortingOrder = -500 + row;
                 sr.color = Random.ColorHSV(0f, 1f, 0.3f, 0.3f, 0.4f, 0.4f);
                 sr.color = Color.Lerp(Color.black, sr.color, (float)row / rowCount);
                 _people.Add(person);
