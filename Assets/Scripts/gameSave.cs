@@ -17,13 +17,6 @@ public class gameSave : MonoBehaviour
     }
 
     public void saveData(){
-        PlayerPrefs.SetInt("levelOne", 0);
-        PlayerPrefs.SetInt("levelTwo", 0);
-        PlayerPrefs.SetInt("levelThree", 0);
-        PlayerPrefs.SetInt("levelFour", 0);
-        PlayerPrefs.SetInt("levelFive", 0);
-        PlayerPrefs.SetInt("levelSix", 0);
- 
     }
 
 
