@@ -6,10 +6,14 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Animator))]
 public class PushButton : MonoBehaviour
 {
+    [SerializeField] private AudioClip _pressSound;
+    [SerializeField] private AudioClip _depressSound;
+
     public UnityEvent ButtonPressed;
     public UnityEvent ButtonDepressed;
 
     private Animator _animator;
+    private AudioSource _audioSource;
 
     private bool _isPressed;
     private bool _lastState = false;
@@ -17,6 +21,7 @@ public class PushButton : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -34,11 +39,13 @@ public class PushButton : MonoBehaviour
             {
                 ButtonPressed?.Invoke();
                 _animator.SetBool("IsPressed", true);
+                _audioSource.PlayOneShot(_pressSound);
             }
             else
             {
                 ButtonDepressed?.Invoke();
                 _animator.SetBool("IsPressed", false);
+                _audioSource.PlayOneShot(_depressSound);
             }
         }
 

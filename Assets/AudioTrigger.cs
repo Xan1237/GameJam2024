@@ -15,4 +15,9 @@ public class AudioTrigger : MonoBehaviour
     {
         _audioSource.Play();
     }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        _audioSource.PlayOneShot(clip);
+    }
 }
