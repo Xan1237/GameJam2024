@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TarodevController;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
 public class WoopieCushion : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _particles;

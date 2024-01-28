@@ -10,7 +10,7 @@ public class DeathTrigger : MonoBehaviour
     {
         if (collision.TryGetComponent(out PlayerController player))
         {
-            GameManager.Instance.RestartLevel();
+            GameManager.Instance.LoseLevel();
         }
     }
 }
