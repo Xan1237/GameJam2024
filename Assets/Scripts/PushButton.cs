@@ -48,7 +48,9 @@ public class PushButton : MonoBehaviour
                 _audioSource.PlayOneShot(_depressSound);
             }
         }
-
-        _isPressed = false;
+        else
+        {
+            _isPressed = false;
+        }
     }
 }
