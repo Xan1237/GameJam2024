@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform _pickup;
 
     private WoopieCushion _cushion;
+    public AudioSource audio4;
 
     private void Update()
     {
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
                     _cushion.transform.parent = _pickup;
                     _cushion.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                     _cushion.transform.localPosition = Vector2.zero;
+                    audio4.Play(0);
                 }
             }
             else
