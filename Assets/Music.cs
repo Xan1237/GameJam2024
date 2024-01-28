@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Music : Singleton<Music>
 {
     [SerializeField] private float _menuVolume = 1f;
-    [SerializeField] private float _gameVolume = 0.1f;
+    [SerializeField] private float _gameVolume = 0.55f;
 
     private AudioSource _audioSource;
 
