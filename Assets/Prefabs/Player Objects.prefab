@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2810789643310839599}
   - component: {fileID: 4686393376874875352}
   - component: {fileID: 3173266510219953353}
+  - component: {fileID: 7756257114675260103}
   m_Layer: 0
   m_Name: Player Objects
   m_TagString: Untagged
@@ -56,6 +57,7 @@ MonoBehaviour:
   _laughUI: {fileID: 5944673237296897003}
   _background: {fileID: 7459804052147480042}
   _player: {fileID: 6570025351975291158}
+  _booingClip: {fileID: 8300000, guid: ce0e57da93f3845f499e3a92e8c64c99, type: 3}
   _laughterDecay: 5
   _laughterRequirement: 200
 --- !u!82 &3173266510219953353
@@ -154,6 +156,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &7756257114675260103
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29048455880414815}
+  m_Enabled: 0
 --- !u!1 &109638896923606584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2273,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5944223905461301215}
+    - targetCorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5045834195828607477}
   m_SourcePrefab: {fileID: 100100000, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
 --- !u!4 &6570025351975291157 stripped
 Transform:
@@ -2299,3 +2312,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _deathY: -10
   _pickup: {fileID: 1910798054440112855}
+--- !u!81 &5045834195828607477
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570025351975291162}
+  m_Enabled: 1

@@ -4415,68 +4415,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
---- !u!1001 &1033590898
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2020782709}
-    m_Modifications:
-    - target: {fileID: 1986642334299190457, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_Name
-      value: Wooden Tile 2 Variant (5) Variant (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 31.650137
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12.01771
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 17.135094
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
---- !u!4 &1033590899 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7360157013276646865, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-  m_PrefabInstance: {fileID: 1033590898}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1047122105
 GameObject:
   m_ObjectHideFlags: 0
@@ -6002,68 +5940,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
---- !u!1001 &1391486333
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2020782709}
-    m_Modifications:
-    - target: {fileID: 1986642334299190457, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_Name
-      value: Wooden Tile 2 Variant (5) Variant (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 24.787962
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.9354124
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 17.135094
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
---- !u!4 &1391486334 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7360157013276646865, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
-  m_PrefabInstance: {fileID: 1391486333}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1392573100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7604,15 +7480,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6804392140476628028, guid: 81320f2b6da77144a9322afefc8ed7c7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4369642
+      value: 1.136926
       objectReference: {fileID: 0}
     - target: {fileID: 6804392140476628028, guid: 81320f2b6da77144a9322afefc8ed7c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.53
+      value: 53.4
       objectReference: {fileID: 0}
     - target: {fileID: 6804392140476628028, guid: 81320f2b6da77144a9322afefc8ed7c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -49.98
+      value: -49.5
       objectReference: {fileID: 0}
     - target: {fileID: 6804392140476628028, guid: 81320f2b6da77144a9322afefc8ed7c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9203,8 +9079,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6277109505072219633}
-  - {fileID: 1033590899}
-  - {fileID: 1391486334}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2049546170
@@ -9678,6 +9552,10 @@ PrefabInstance:
     - target: {fileID: 1986642334299190457, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
       propertyPath: m_Name
       value: Wooden Tile 2 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360157013276646865, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.1
       objectReference: {fileID: 0}
     - target: {fileID: 8518846393984366118, guid: e148eb3c5a0e6bd44959b31c3e1b3a67, type: 3}
       propertyPath: m_LocalPosition.x
