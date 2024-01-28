@@ -17,7 +17,7 @@ public class Pie : MonoBehaviour
     {
         if (collision.TryGetComponent(out Player player))
         {
-            GameManager.Instance.AddLaughter(10000f);
+            GameManager.Instance.AddLaughter(10000f, true);
             _audioSource.Play();
             _animator.SetTrigger("Splash");
         }
