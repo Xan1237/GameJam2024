@@ -18,27 +18,27 @@ public class StartButton : MonoBehaviour
 
     public void Button2(){
         if(PlayerPrefs.GetInt("LevelOne") == 1){
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
         }
     }
         public void Button3(){
         if(PlayerPrefs.GetInt("LevelOne") == 1 && PlayerPrefs.GetInt("LevelTwo") ==1){
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
         }
         }
         public void Button4(){
             if(PlayerPrefs.GetInt("LevelOne") == 1 && PlayerPrefs.GetInt("LevelTwo") ==1 && PlayerPrefs.GetInt("LevelThree") == 1){
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(4);
         }
     }
         public void Button5(){
             if(PlayerPrefs.GetInt("LevelOne") == 1 && PlayerPrefs.GetInt("LevelTwo") ==1 && PlayerPrefs.GetInt("LevelThree") == 1 && PlayerPrefs.GetInt("LevelFour") == 1){
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
     }
     public void Button6(){
         if(PlayerPrefs.GetInt("LevelOne") == 1 && PlayerPrefs.GetInt("LevelTwo") ==1 && PlayerPrefs.GetInt("LevelThree") == 1 && PlayerPrefs.GetInt("LevelFour")==1 && PlayerPrefs.GetInt("LevelFive")==1){
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(6);
         }
     }
 
