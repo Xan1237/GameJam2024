@@ -42,5 +42,10 @@ public class StartButton : MonoBehaviour
         }
     }
 
+    public void Button7(){
+        if(PlayerPrefs.GetInt("LevelOne") == 1 && PlayerPrefs.GetInt("LevelTwo") ==1 && PlayerPrefs.GetInt("LevelThree") == 1 && PlayerPrefs.GetInt("LevelFour")==1 && PlayerPrefs.GetInt("LevelFive")==1 && PlayerPrefs.GetInt("LevelSix") ==1){
+        SceneManager.LoadScene(7);
+        }     
+    }
 
 }
