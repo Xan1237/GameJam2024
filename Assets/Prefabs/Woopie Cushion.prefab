@@ -330,7 +330,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: -1633530493, guid: ef1d0db740d604b8791111ce233c6c35, type: 3}
-  m_Color: {r: 0.9529412, g: 0.42745098, b: 0.8980392, a: 1}
+  m_Color: {r: 0.7169812, g: 0.27394092, b: 0.6706933, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 6373249096701037363}
   - component: {fileID: 5919117689379830907}
   - component: {fileID: 946367264968913741}
+  - component: {fileID: 486082918859583286}
   m_Layer: 0
   m_Name: Woopie Cushion
   m_TagString: Untagged
@@ -567,7 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particles: {fileID: 6523476880930813589}
   _spriteRenderer: {fileID: 1111700019000980700}
-  _normalColor: {r: 0.9529412, g: 0.42745098, b: 0.8980392, a: 1}
+  _normalColor: {r: 0.7169812, g: 0.27394092, b: 0.6706933, a: 1}
   _staticColor: {r: 1, g: 0.5065182, b: 0.023584902, a: 1}
   _velocityMultiplier: 1.6
   _velocityConstant: 10
@@ -643,6 +644,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.49}
   m_EdgeRadius: 0
+--- !u!50 &486082918859583286
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6130128392300334303}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7782368525218663007
 GameObject:
   m_ObjectHideFlags: 0
