@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private LaughMeterUI _laughUI;
     [SerializeField] private Background _background;
     [SerializeField] private PlayerController _player;
+    [SerializeField] private AudioClip _booingClip;
     [SerializeField] private float _laughterDecay = 5f;
     [SerializeField] private float _laughterRequirement = 100f;
 
@@ -17,6 +18,7 @@ public class GameManager : Singleton<GameManager>
     private float _laughAmount = 0f;
 
     private bool _levelWon = false;
+    private bool _levelLost = false;
 
     private void Start()
     {
@@ -28,6 +30,9 @@ public class GameManager : Singleton<GameManager>
 
     private void Update()
     {
+        if (_levelLost)
+            return;
+
         if (!_levelWon)
             _laughAmount -= Time.deltaTime * _laughterDecay;
 
@@ -46,9 +51,33 @@ public class GameManager : Singleton<GameManager>
     public void AddLaughter(float amount, bool canWin)
     {
         _laughAmount += amount;
-
         if (_laughAmount >= _laughterRequirement && canWin)
         {
+            //playerprefs
+            int scene = SceneManager.GetActiveScene().buildIndex;
+            if(scene == 2){
+                PlayerPrefs.SetInt("levelOne", 1);
+            }
+             if(scene == 3){
+                PlayerPrefs.SetInt("levelTwo", 1);
+            }
+            if(scene == 4){
+                PlayerPrefs.SetInt("levelThree", 1);
+            }
+             if(scene == 5){
+                PlayerPrefs.SetInt("levelFour", 1);
+            }
+             if(scene == 6){
+                PlayerPrefs.SetInt("levelFive", 1);
+            }
+             if(scene == 7){
+                PlayerPrefs.SetInt("levelSix", 1);
+            }
+             if(scene == 8){
+                PlayerPrefs.SetInt("levelSeven", 1);
+            }
+
+
             _laughAmount = _laughterRequirement;
             _levelWon = true;
             _player.TakeAwayControl();
@@ -64,7 +93,13 @@ public class GameManager : Singleton<GameManager>
 
     public void LoseLevel()
     {
+        _levelLost = true;
         _player.gameObject.SetActive(false);
+        GetComponent<AudioListener>().enabled = true;
+        _audioSource.Stop();
+        _audioSource.clip = _booingClip;
+        _audioSource.volume = 1f;
+        _audioSource.Play();
         StartCoroutine(LoseLevelCoroutine());
     }
 

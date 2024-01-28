@@ -12,6 +12,7 @@ public class CheckOne : MonoBehaviour
     public Image checkFour;
     public Image checkFive;
     public Image checkSix;
+    public Image checkSeven;
 
 
     // Start is called before the first frame update
@@ -23,6 +24,8 @@ public class CheckOne : MonoBehaviour
           checkFour.enabled = false;
           checkFive.enabled = false;
           checkSix.enabled = false;
+          checkSix.enabled=false;
+          checkSeven.enabled=false;
           if(PlayerPrefs.GetInt("LevelOne") == 1){
             check.enabled = true;
           }
@@ -43,6 +46,9 @@ public class CheckOne : MonoBehaviour
           }
           if(PlayerPrefs.GetInt("LevelSix") == 1){
             checkSix.enabled = true;
+            }
+          if(PlayerPrefs.GetInt("LevelSeven") == 1){
+            checkSeven.enabled = true;
             }
     }
 
