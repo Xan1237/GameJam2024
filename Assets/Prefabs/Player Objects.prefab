@@ -82,7 +82,7 @@ Transform:
   m_GameObject: {fileID: 109638896923606584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.089998096, y: -8, z: -10}
+  m_LocalPosition: {x: -2.8547802, y: 0.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -124,7 +124,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -362,8 +362,8 @@ Transform:
   m_GameObject: {fileID: 1971016797268042375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.007999897, y: -11.560001, z: 10}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalPosition: {x: 0, y: -10.56, z: 10}
+  m_LocalScale: {x: 2.82, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5432543434925807964}
@@ -409,11 +409,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -7
-  m_Sprite: {fileID: -1044639380, guid: 9484020ca99a5cd41b200761c9051de4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0e5c76f5173a4744bfc12a8a79cb8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 102.9, y: 14.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -1158,6 +1158,10 @@ PrefabInstance:
     - target: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_Name
       value: Player Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068313154050967, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2969068313184073013, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_Time

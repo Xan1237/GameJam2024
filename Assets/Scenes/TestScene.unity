@@ -1184,6 +1184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woopie Cushion
       objectReference: {fileID: 0}
+    - target: {fileID: 6373249096701037363, guid: 96f1f44bda6ec429aa822b9125396efc, type: 3}
+      propertyPath: _maxLaughter
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1389,11 +1393,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 679069936318740148, guid: fbd20b62bc2324197b574dcadca70d3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.4
+      value: 4.49
       objectReference: {fileID: 0}
     - target: {fileID: 679069936318740148, guid: fbd20b62bc2324197b574dcadca70d3b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.88
+      value: -7.47
       objectReference: {fileID: 0}
     - target: {fileID: 679069936318740148, guid: fbd20b62bc2324197b574dcadca70d3b, type: 3}
       propertyPath: m_LocalPosition.z
