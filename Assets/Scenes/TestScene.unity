@@ -171,6 +171,17 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &145152156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7459804052147480042, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
+  m_PrefabInstance: {fileID: 1680911064541967197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478a60ed1f40643adaba658ab4e3cbf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239278544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,8 +1107,12 @@ PrefabInstance:
       value: SeatRows
       objectReference: {fileID: 0}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
+      propertyPath: _background
+      value: 
+      objectReference: {fileID: 145152156}
+    - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterDecay
-      value: 60
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterDecayDelay
@@ -1105,7 +1120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4686393376874875352, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: _laughterRequirement
-      value: 50
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 6570025351975291157, guid: 940ff51392bf93c4abbe3faffdbfd5b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1186,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6373249096701037363, guid: 96f1f44bda6ec429aa822b9125396efc, type: 3}
       propertyPath: _maxLaughter
-      value: 0
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1363,9 +1378,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2975438089914867746, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975438089914867746, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.73
+      objectReference: {fileID: 0}
     - target: {fileID: 3748691291474321493, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: m_Name
       value: TeethPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948188894111057323, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948188894111057323, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 8175827964398815620, guid: 287a7a6f73f0c4862960b5df816102b5, type: 3}
       propertyPath: _positions.Array.size
