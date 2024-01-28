@@ -18,7 +18,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
-        _background.GenerateBackground();
+        float people = (float)SceneManager.GetActiveScene().buildIndex / (SceneManager.sceneCountInBuildSettings - 1) * Random.Range(0.8f, 1f);
+        _background.GenerateBackground(people);
     }
 
     private void Update()
